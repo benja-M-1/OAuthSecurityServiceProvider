@@ -1,0 +1,23 @@
+{
+    "name": "benjam1/oauth-security-service-provider",
+    "description": "OAuth security service provider to use with the KnpOAuthBundle.",
+    "keywords": ["microframework", "oauth", "security"],
+    "homepage": "https://github.com/benja-M-1/OAuthSecurityServiceProvider",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benjamin Grandfond",
+            "email": "benjamin.grandfond@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "silex/silex": "dev-master",
+        "knplabs/knp-oauth-bundle": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Benjamin": [ "Benjamin" ]
+        }
+    }
+}
