@@ -1,5 +1,6 @@
 {
     "name": "benjam1/oauth-security-service-provider",
+    "type": "library",
     "description": "OAuth security service provider to use with the KnpOAuthBundle.",
     "keywords": ["microframework", "oauth", "security"],
     "homepage": "https://github.com/benja-M-1/OAuthSecurityServiceProvider",
@@ -16,8 +17,7 @@
         "knplabs/knp-oauth-bundle": "dev-master"
     },
     "autoload": {
-        "psr-0": {
-            "Benjamin": [ "Benjamin" ]
-        }
-    }
+        "psr-0": { "Benjamin\\Provider": "" }
+    },
+    "target-dir": "Benjamin/Provider"
 }
