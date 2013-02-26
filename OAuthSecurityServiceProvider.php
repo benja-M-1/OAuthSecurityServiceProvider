@@ -95,7 +95,7 @@ class OAuthSecurityServiceProvider extends SecurityServiceProvider
 
         $app['security.authentication_listener.oauth._proto'] = $app->protect(function ($name, $options) use ($app, $that) {
             return $app->share(function () use ($app, $name, $options, $that) {
-                $that->addFakeRoute(array('match', $tmp = isset($options['check_path']) ? $options['check_path'] : '/login_check', str_replace('/', '_', ltrim($tmp, '/'))));
+                $that->addFakeRoute('match', $tmp = isset($options['check_path']) ? $options['check_path'] : '/login_check', str_replace('/', '_', ltrim($tmp, '/')));
 
                 if (!isset($app['security.authentication.success_handler.'.$name])) {
                     $app['security.authentication.success_handler.'.$name] = $app['security.authentication.success_handler._proto']($name, $options);
